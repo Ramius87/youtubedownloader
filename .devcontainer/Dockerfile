@@ -1,4 +1,1 @@
-FROM python:3
-
-RUN pip install --no-cache-dir --upgrade pip \
-  && pip install --no-cache-dir customtkinter moviepy pytube
+FROM mcr.microsoft.com/vscode/devcontainers/python:3.10

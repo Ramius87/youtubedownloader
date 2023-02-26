@@ -6,8 +6,17 @@
 	"build": {
         // Path is relataive to the devcontainer.json file.
         "dockerfile": "Dockerfile"
+    },
+
+	// Set DISPLAY Variable for GUI Apps
+	"postCreateCommand": "pip install -r requirements.txt",
+
+	"containerEnv": {
+        "DISPLAY": "host.docker.internal:0"
     }
 
+	// "postStartCommand": "export DISPLAY=host.docker.internal:0"
+	
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
