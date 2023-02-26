@@ -36,7 +36,7 @@ class App(customtkinter.CTk):
         #self.textbox.insert("insert", self.entry.get() + "\n")
         self.textbox.insert("insert", download.get_video_information(self.entry.get()) + "\n")
         print(download.get_video_information(self.entry.get()))
-        download.download_video(self.entry.get())
+        download.download_playlist(self.entry.get())
 
 if __name__ == "__main__":
     app = App()
